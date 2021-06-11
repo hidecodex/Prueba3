@@ -1,0 +1,46 @@
+body {
+  background:url(https://images5.alphacoders.com/320/320480.jpg);
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: sans-serif;
+}
+.menu{
+  list-style: none;
+  padding: 0;
+  background:rgb(46, 46, 46);
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+.menu li a{
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  display: block;
+}
+.menu li{
+  display: inline-block;
+  text-align:left;
+}
+
+a {
+  text-decoration: none;
+  color: #179b77;
+  transition: 0.5s ease;
+  font-family: Times;
+}
+a:hover {
+  color: #179b77;
+}
+
+b {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.5s ease;
+  font-size: 2rem;
+  font-family: Times;
+}
+b:hover {
+  color: #179b77;
+}
