@@ -5,42 +5,59 @@ body {
   background-position: center;
   font-family: sans-serif;
 }
+.logo>.logoimg{
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
 .menu{
-  list-style: none;
   padding: 0;
   background:rgb(46, 46, 46);
   width: 100%;
-  max-width: 1000px;
+  max-width: 930px;
   margin: auto;
+  align-items: center;
+  display: flex;
+  height:40px;
+}
+.menu-items{
+  display: flex;
+  list-style: none;
+  margin:auto;
+}
+.bton-login{
+  justify-content: flex-end;
+  display: flex;
+  list-style: none;
+  margin:auto;
 }
 .menu li a{
   text-decoration: none;
   color: white;
-  padding: 10px;
+  padding: 5px;
   display: block;
+  font-family: Times;
 }
 .menu li{
   display: inline-block;
-  text-align:left;
 }
-
-a {
+.menu li a:hover{
+  background: rgb(3, 122, 43);
+}
+.menu li b{
   text-decoration: none;
-  color: #179b77;
-  transition: 0.5s ease;
+  color: white;
+  padding: 5px;
+  display: block;
   font-family: Times;
 }
-a:hover {
-  color: #179b77;
+.menu li b:hover{
+  background: rgb(3, 114, 122);
 }
-
-b {
-  text-decoration: none;
-  color: #ffffff;
-  transition: 0.5s ease;
-  font-size: 2rem;
-  font-family: Times;
-}
-b:hover {
-  color: #179b77;
+.carousel{
+  width: 100%;
+  max-width: 930px;
+  margin: auto;
+  align-items: center;
+  display: flex;
 }
