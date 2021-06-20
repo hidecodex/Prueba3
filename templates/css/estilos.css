@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  background-image:;
   background-size:cover;
   background-attachment: fixed;
   background-position: center;
@@ -15,7 +14,7 @@ body {
 .navbar{
   padding: 0;
   width: 100%;
-  max-width: 930px;
+  max-width: 950px;
   margin: auto;
   align-items: center;
   display: flex;
@@ -24,7 +23,7 @@ body {
 .navbar-2{
   padding: 0;
   width: 100%;
-  max-width: 930px;
+  max-width: 950px;
   margin: auto;
   align-items: center;
   justify-content: center;
@@ -40,7 +39,7 @@ body {
 
 .carousel{
   width: 100%;
-  max-width: 930px;
+  max-width: 950px;
   margin: auto;
   align-items: center;
   display: flex;
@@ -57,31 +56,39 @@ body {
   border-radius: 4px;
   background-color: white;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  text-align: left;
+  padding: 10px;
 }
 
 .producto{
-  width: 30%;
-  height: 220px;
+  width: 24%;
+  max-width: 950px;
+  height: auto;
   background-color: #fafafa;
   border: 1px solid gray;
   display: inline-block;
   vertical-align: top;
-  margin-left: 1%;
-  margin-top: 1%;
+  margin-left: auto;
+  margin-top: 2%;
 }
 
 .producto img{
-  width: 60%;
+  width: 90%;
+  max-width: 950px;
   height: 60%;
-  margin: 0 auto;
+  margin: auto;
 }
 
 section{
-  width: 80%;
-  min-height: 500px;
+  width: 100%;
+  max-width: 950px;
+  min-height: 950px;
   border: 1px solid #ddd;
   padding: 2%;
   margin: 0 auto;
   margin-left: 10%;
-  margin-top: 50%;
+  margin-top: 80%;
+  margin: auto;
+  background-color: #fafafa;
+  text-align: center;
 }
