@@ -2,4 +2,14 @@ from django.shortcuts import render
 
 # Create your views here.
 def home (request):
-    return render(request, 'home.html', {})
+    data = {}
+    return render(request, 'home.html', data)
+
+
+    """
+    agregar
+
+    def (nombre pagina) (request):
+    data = {}
+    return render(request, 'home.html', data)
+    """
