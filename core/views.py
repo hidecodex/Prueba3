@@ -30,9 +30,23 @@ def m2 (request):
     data = {}
     return render(request, 'm2.html', data)
 
-    data = {}
-    return render(request, 'registro.html', data)
 
+def SignIn(request):
+    contexto = {}
+    return render(request, 'signin.html', contexto)
+
+def Logeando(request):
+    username = request.POST.get('usuario','')
+    password = request.POST.get('clave', '')
+
+    user = authenticate(request, username=username, password=password)
+
+    if user is not None:
+        auth_login(request, user)
+        return redirect('index')
+    else:
+        return redirect('SignIn')
+
+def Deslogeo(request):
     logout(request)
     return redirect('Inicio')
-    
