@@ -15,47 +15,48 @@
         {% endblock %}
     </head>
     <body>
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="{% url 'index' %}">
-                    <li class="logo"><img src="{% static 'img/productos/pc-logo.jpg' %}" class="logoimg"></li>
-              </a>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Inicio</a>
-                        <a class="nav-link" href="{% url 'mb' %}">MB</a>
-                        <a class="nav-link" href="{% url 'cpu' %}">CPU</a>
-                        <a class="nav-link" href="{% url 'gpu' %}">GPU</a>
-                        <a class="nav-link" href="{% url 'psu' %}">PSU</a>
-                        <a class="nav-link" href="{% url 'ram' %}">RAM</a>
-                        <a class="nav-link" href="{% url 'hdd' %}">HDD</a>
-                        <a class="nav-link" href="{% url 'ssd' %}">SSD</a>
-                        <a class="nav-link" href="{% url 'm2' %}">M2</a>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="{% url 'index' %}">
+                        <li class="logo"><img src="{% static 'img/productos/pc-logo.jpg' %}" class="logoimg"></li>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Inicio</a>
+                            <a class="nav-link" href="{% url 'mb' %}">MB</a>
+                            <a class="nav-link" href="{% url 'cpu' %}">CPU</a>
+                            <a class="nav-link" href="{% url 'gpu' %}">GPU</a>
+                            <a class="nav-link" href="{% url 'psu' %}">PSU</a>
+                            <a class="nav-link" href="{% url 'ram' %}">RAM</a>
+                            <a class="nav-link" href="{% url 'hdd' %}">HDD</a>
+                            <a class="nav-link" href="{% url 'ssd' %}">SSD</a>
+                            <a class="nav-link" href="{% url 'm2' %}">M2</a>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <ul class="navbar-nav">
+                                {% if user.is_authenticated %}
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">{{user.username}}</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-danger" href="#">Sign Out</a>
+                                    </li>
+                                {% else %}
+                                    <li class="nav-item">
+                                        <a class="nav-link text-success" href="#">Sign In</a>
+                                    </li>
+                                {% endif %}
+                            </ul>
+                        </ul>
                     </div>
                 </div>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <ul class="navbar-nav">
-                            {% if user.is_authenticated %}
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">{{user.username}}</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-danger" href="#">Sign Out</a>
-                                </li>
-                            {% else %}
-                                <li class="nav-item">
-                                    <a class="nav-link text-success" href="#">Sign In</a>
-                                </li>
-                            {% endif %}
-                        </ul>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        {% block body %}
-        {% endblock %}
+            </nav>
+            {% block body %}
+            {% endblock %}
+        </div>
 <!--
     afrefar diseño footer
 -->

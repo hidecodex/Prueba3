@@ -25,11 +25,19 @@ body {
 .navbar{
   padding: 0;
   width: 100%;
-  max-width: 930px;
   margin: auto;
   align-items: center;
   display: flex;
   height:auto;
+}
+.container{
+  padding: 0;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  align-items: center;
+  height:auto;
+  background-color: rgb(167, 0, 103);
 }
 .container-fluid{
   justify-content: space-between;
@@ -37,7 +45,6 @@ body {
 .navbar-2{
   padding: 0;
   width: 100%;
-  max-width: 930px;
   margin: auto;
   align-items: center;
   justify-content: center;
@@ -52,7 +59,6 @@ body {
 
 .carousel{
   width: 100%;
-  max-width: 930px;
   margin: auto;
   align-items: center;
   display: flex;
