@@ -15,7 +15,7 @@
         {% endblock %}
     </head>
     <body>
-        
+
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="{% url 'index' %}">
@@ -25,13 +25,13 @@
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Inicio</a>
                         <a class="nav-link" href="{% url 'mb' %}">MB</a>
-                        <a class="nav-link" href="cpu.html">CPU</a>
-                        <a class="nav-link" href="gpu.html">GPU</a>
-                        <a class="nav-link" href="psu.html">PSU</a>
-                        <a class="nav-link" href="ram.html">RAM</a>
-                        <a class="nav-link" href="hdd.html">HDD</a>
-                        <a class="nav-link" href="ssd.html">SSD</a>
-                        <a class="nav-link" href="m2.html">M2</a>
+                        <a class="nav-link" href="{% url 'cpu' %}">CPU</a>
+                        <a class="nav-link" href="{% url 'gpu' %}">GPU</a>
+                        <a class="nav-link" href="{% url 'psu' %}">PSU</a>
+                        <a class="nav-link" href="{% url 'ram' %}">RAM</a>
+                        <a class="nav-link" href="{% url 'hdd' %}">HDD</a>
+                        <a class="nav-link" href="{% url 'ssd' %}">SSD</a>
+                        <a class="nav-link" href="{% url 'm2' %}">M2</a>
                     </div>
                 </div>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
