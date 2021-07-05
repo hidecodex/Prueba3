@@ -12,7 +12,8 @@ urlpatterns = [
     path('ram/', ram, name='ram'),
     path('hdd/', hdd, name='hdd'),
     path('ssd/', ssd, name='ssd'),
-    path('m2/', m2, name='m2')
+    path('m2/', m2, name='m2'),
+
 ]
 
 urlpatterns + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
