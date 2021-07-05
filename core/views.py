@@ -5,6 +5,9 @@ def home (request):
     data = {}
     return render(request, 'home.html', data)
 
+def mb (request):
+    data = {}
+    return render(request, 'mb.html', data)
 
     """
     agregar
