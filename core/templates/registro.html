@@ -18,16 +18,22 @@
                         <label for="usuario" class="form-label">Usuario</label>
                         <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Ingrese usuario">
                     </div>
+
+                    <div class="mb-3">
+                        <label for="clave" class="form-label">correo</label>
+                        <input type="password" class="form-control" id="clave" name="clave" placeholder="Ingrese su correo">
+                    </div>
                     <div class="mb-3">
                         <label for="clave" class="form-label">Clave</label>
                         <input type="password" class="form-control" id="clave" name="clave" placeholder="Ingrese clave">
                     </div>
-                    <a class="nav-link text-success" href="{% url 'registro' %}">Registrarse</a>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="clave" name="repita su clave" placeholder="Repita su clave">
+                    </div>
                     <div class="mb-3" style="margin-top: 10px;">
                         <button type="submit" class="btn btn-success" style="width: 100%;">Sign In</button>
                     </div>
                 </form>
-
             </div>
         </div>
     </div>

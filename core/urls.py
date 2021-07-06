@@ -1,4 +1,4 @@
-from core.views import Deslogeo, Logeando, SignIn, home,mb,cpu,gpu,psu,ram,hdd,ssd,m2
+from core.views import Deslogeo, Logeando, SignIn, home,mb,cpu,gpu,psu,ram,hdd,ssd,m2,registro
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
@@ -16,6 +16,7 @@ urlpatterns = [
 
     # Sign In
     path('signin/', SignIn, name='SignIn'),
+    path('registro/', registro, name='registro'),
     path('signin/logeando/', Logeando, name='Logeando'),
     path('signin/deslogeando/', Deslogeo, name='Deslogeo'),
 

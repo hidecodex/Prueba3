@@ -1,5 +1,7 @@
 from django.shortcuts import render,redirect
 from django.contrib.auth import authenticate, logout, login as auth_login
+from django.contrib.auth.forms import UserCreationForm
+
 
 # Paginas del menu.
 def home (request):
@@ -35,6 +37,10 @@ def SignIn(request):
     contexto = {}
     return render(request, 'signin.html', contexto)
 
+def registro(request):
+    contexto = {}
+    return render(request, 'registro.html', contexto)
+
 def Logeando(request):
     username = request.POST.get('usuario','')
     password = request.POST.get('clave', '')
@@ -49,4 +55,4 @@ def Logeando(request):
 
 def Deslogeo(request):
     logout(request)
-    return redirect('Inicio')
+    return redirect('index')
