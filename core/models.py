@@ -5,7 +5,7 @@ class Componente(models.Model):
     id = models.AutoField(primary_key=True)
     Nombre = models.CharField(max_length=99)
 
-class Fabricante(models.Models):
+class Fabricante(models.Model):
     id = models.AutoField(primary_key=True)
     Nombre = models.CharField(max_length=99)
 
