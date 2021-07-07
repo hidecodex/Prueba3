@@ -35,9 +35,6 @@ body {
   height:100vh;
   background-color: rgba(223, 223, 223, 0.692);
 }
-.container-fluid{
-  justify-content: space-between;
-}
 .navbar-2{
   padding: 0;
   width: 100%;
@@ -51,6 +48,7 @@ body {
   display: flex;
   list-style: none;
   margin:auto;
+  justify-content: space-between;
 }
 .carousel{
   width: 100%;
@@ -124,3 +122,4 @@ p{
       border-radius: 2%;
   }
 }
+

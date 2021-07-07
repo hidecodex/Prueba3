@@ -39,16 +39,16 @@
                         <ul class="navbar-nav">
                             <ul class="navbar-nav">
                                 {% if user.is_authenticated %}
-                                    <li class="nav-item">
+                                    <a class="nav-item">
                                         <a class="nav-link" href="#">{{user.username}}</a>
-                                    </li>
-                                    <li class="nav-item">
+                                    </a>
+                                    <a class="nav-item">
                                         <a class="nav-link text-danger" href="{% url 'Deslogeo' %}">Sign Out</a>
-                                    </li>
+                                    </a>
                                 {% else %}
-                                    <li class="nav-item">
+                                    <a class="nav-item">
                                         <a class="nav-link text-success" href="{% url 'SignIn' %}">Sign In</a>
-                                    </li>
+                                    </a>
                                 {% endif %}
                             </ul>
                         </ul>

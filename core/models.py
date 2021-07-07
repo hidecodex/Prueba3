@@ -5,9 +5,15 @@ class Componente(models.Model):
     id = models.AutoField(primary_key=True)
     Nombre = models.CharField(max_length=99)
 
+    def __str__(self):
+        return self.Nombre
+
 class Fabricante(models.Model):
     id = models.AutoField(primary_key=True)
     Nombre = models.CharField(max_length=99)
+
+    def __str__(self):
+        return self.Nombre
 
 class Producto(models.Model):
     id = models.AutoField(primary_key=True)
@@ -18,4 +24,5 @@ class Producto(models.Model):
     Stock = models.IntegerField(default=0)
     Imagen = models.ImageField(upload_to='static/img/productos/')
     
-   
+    def __str__(self):
+        return self.Nombre

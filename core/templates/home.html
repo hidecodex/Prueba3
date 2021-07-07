@@ -44,4 +44,23 @@
               <span class="navbar-brand mb-0 h1">NUEVO</span>
 
           </nav>
+
+
+        <h2>Productos</h2>
+          <div class="productos">
+            {% for p in productos %}
+            <div class="producto">
+
+              <div class="contenedor_producto">
+                
+                <img src="{% static 'img/productos/cpu intel i7' %}" alt="imagen producto">
+                <div class="detalle">
+                  <h2>Nombre</h2>
+                  <h3>fabricante</h3>
+                  <h3>precio</h3>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
 {% endblock %}

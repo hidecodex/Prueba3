@@ -3,10 +3,15 @@ from django.contrib.auth import authenticate, logout, login as auth_login
 from django.contrib.auth.forms import UserCreationForm
 
 
+
 # Paginas del menu.
 def home (request):
-    data = {}
+
+    data = {
+ 
+    }
     return render(request, 'home.html', data)
+
 def mb (request):
     data = {}
     return render(request, 'mb.html', data)
