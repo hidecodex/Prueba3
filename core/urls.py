@@ -1,4 +1,4 @@
-from core.views import Deslogeo, Logeando, SignIn, home,mb,cpu,gpu,psu,ram,hdd,ssd,m2,registro
+from core.views import Deslogeo, Logeando, SignIn, home,mb,cpu,gpu,psu,ram,hdd,ssd,m2,registro,admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
@@ -13,7 +13,7 @@ urlpatterns = [
     path('hdd/', hdd, name='hdd'),
     path('ssd/', ssd, name='ssd'),
     path('m2/', m2, name='m2'),
-
+    path('admin2/', admin, name='admin'),
     # Sign In
     path('signin/', SignIn, name='SignIn'),
     path('registro/', registro, name='registro'),
