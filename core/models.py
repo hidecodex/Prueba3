@@ -22,7 +22,7 @@ class Producto(models.Model):
     Componente = models.ForeignKey(Componente, null='', blank='', on_delete=models.CASCADE)
     Precio = models.IntegerField(default=0)
     Stock = models.IntegerField(default=0)
-    Imagen = models.ImageField(upload_to='static/img/productos/')
+    Imagen = models.ImageField(upload_to='static/media/productos/')
     
     def __str__(self):
         return self.Nombre
