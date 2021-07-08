@@ -1,8 +1,8 @@
 from core.models import Componente, Producto
 from django.shortcuts import render,redirect
 from django.contrib.auth import authenticate, logout, login as auth_login
-from django.contrib.auth.forms import UserCreationForm
-
+from django.contrib.auth.models import User
+from django.contrib import messages
 
 
 # Paginas del menu.
@@ -51,7 +51,7 @@ def m2 (request):
     Productos = Producto.objects.filter(Componente=componente)
     data = {"Productos":Productos}
     return render(request, 'm2.html', data)
-    
+
 def admin (request):
     Productos = Producto.objects.all()
     data = {"Productos":Productos}
@@ -60,9 +60,19 @@ def admin (request):
 def SignIn(request):
     contexto = {}
     return render(request, 'signin.html', contexto)
-def registro(request):
-    contexto = {}
-    return render(request, 'registro.html', contexto)
+
+def SignUp(request):
+    return render(request,'registro.html')
+
+def Registros(request):
+    username = request.POST.get('usuario','')
+    email = request.POST.get('correo','')
+    password1 = request.POST.get('clave','')
+    usuario = User.objects.create_user(username, email, password1)
+    usuario.save()
+    return redirect('index')
+
+
 def Logeando(request):
     username = request.POST.get('usuario','')
     password = request.POST.get('clave', '')
